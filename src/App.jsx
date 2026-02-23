@@ -5,24 +5,25 @@ import Button from '../components/Button'
 
 
 
-function App(props) {
+function App({ darkMode }) {
 
-  const [isDarkMode, setIsDarkMode] = useState(props.darkMode)
+  const [isDarkMode, setIsDarkMode] = useState(darkMode)
   const [isPad, setIsPad] = useState(pads)
 
   function toggleDarkMode(){
-    console.log(isDarkMode)
-
+    console.log(isPad.length)
     setIsDarkMode(prevMode=>(!prevMode))
   }
-
+  const styles={
+    backgroundColor: isDarkMode ? '#222222' : '#cccccc'
+  }
   const buttonElement = isPad.map(pad => (
     <Button key={pad.id} style={{backgroundColor: pad.color}} onClick={toggleDarkMode}></Button>
   ))
 
 
   return (
-    <div className='w-full min-h-screen flex items-center justify-center ' style={{backgroundColor: isDarkMode ? '#222222' : '#cccccc'}}>
+    <div className='w-full min-h-screen flex items-center justify-center ' style={styles}>
      <div className='grid grid-cols-4 w-max h-max gap-4'>
       {buttonElement}
      </div>

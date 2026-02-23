@@ -22,7 +22,7 @@ function App(props) {
 
 
   return (
-    <div className='w-full min-h-screen flex items-center justify-center ' style={{backgroundColor: isDarkMode ? '#222222' : 'white'}}>
+    <div className='w-full min-h-screen flex items-center justify-center ' style={{backgroundColor: isDarkMode ? '#222222' : '#cccccc'}}>
      <div className='grid grid-cols-4 w-max h-max gap-4'>
       {buttonElement}
      </div>

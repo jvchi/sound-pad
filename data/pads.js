@@ -1,38 +1,10 @@
 export default [
-  { id: 1,
-    color: "#F5C280",
-    on: false
-  },
-  { id: 2,
-    color: '#F18D8B',
-    on: false
-  },
-  { id: 3,
-    color: "#EEEC79",
-    on: false
-  },
-  { id: 4,
-    color: "#64ED98",
-    on: false
-  },
-  { id: 5,
-    color: "#63DEED",
-    on: false
-  },
-  { id: 6,
-    color: "#877FED",
-    on: false
-  },
-  { id: 7,
-    color: "#A57FE9",
-    on: false
-  },
-  { id: 8,
-    color: "#F289C1",
-    on: false
-  },
-  // { id: 9,
-  //   color: "#E930B5",
-  //   on: false
-  // },
+  { id: 1, color: "oklch(0.71 0.16 15)",  on: false },  // red
+  { id: 2, color: "oklch(0.71 0.16 50)",  on: false },  // orange
+  { id: 3, color: "oklch(0.71 0.16 95)",  on: false },  // yellow
+  { id: 4, color: "oklch(0.71 0.16 145)", on: false },  // green
+  { id: 5, color: "oklch(0.71 0.16 195)", on: false },  // cyan
+  { id: 6, color: "oklch(0.71 0.16 255)", on: false },  // blue
+  { id: 7, color: "oklch(0.71 0.16 305)", on: false },  // purple
+  { id: 8, color: "oklch(0.71 0.16 350)", on: false },  // pink
 ]

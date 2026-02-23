@@ -1,10 +1,12 @@
 import React from 'react'
 export default function Pad({children, className='', ...props}){
 
-  const baseStyle = 'w-[100px] h-[100px] rounded mx-auto active:scale-99 shadow-[inset_0px_0px_2px_rgba(0,0,0,0.5)] shadow-white'
+  const baseStyle = 'w-[100px] h-[100px] rounded mx-auto active:scale-99 shadow-[inset_0px_0px_2px_rgba(0,0,0,0.5)] shadow-white border-white border-2'
+  
+  const [isOn, setIsOn] = React.useState(props.on);
 
   return(
-    <button className={`${baseStyle} || "" ${className} ` } style={{backgroundColor: props.color, }} {...props}>
+    <button className={`${baseStyle} || "" ${className} ` } style={{backgroundColor: props.color, opacity: props.on ? '1' : '.1' }} onClick={()=> props.toggle(props.id)} {...props}>
       {children}
       </button>
   )

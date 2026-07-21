@@ -4,6 +4,10 @@ An 8-pad grid where each pad toggles on and off with its own color.
 
 A minimal React exercise in component composition and state updates. Each pad is a reusable component driven by data from a shared array.
 
+## Tech stack
+
+**Frontend:** React, Vite, Tailwind CSS
+
 ## Features
 
 - 2×4 responsive pad grid
